@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b2b2b"
+    tools:context=".RegisterFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="122dp"
+        android:layout_height="106dp"
+        android:src="@drawable/bee_robo_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="114dp"
+        android:layout_height="102dp"
+        android:src="@drawable/bee_robo_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/add" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="291dp"
+        android:layout_height="240dp"
+        android:background="#393e46"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24">
+
+        <EditText
+            android:id="@+id/reg_name"
+            android:layout_width="200dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#89cff0"
+            android:ems="10"
+            android:hint="@string/enter_n"
+            android:inputType="textPersonName"
+            android:padding="5sp"
+            android:textColor="#ffffff"
+            android:textColorHint="#a9a9a9"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.433"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/reg_regNo"
+            android:layout_width="196dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#89cff0"
+            android:ems="10"
+            android:hint="@string/enter_r"
+            android:inputType="textPersonName"
+            android:padding="5sp"
+            android:textColor="#ffffff"
+            android:textColorHint="#a9a9a9"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.429"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reg_name" />
+
+        <EditText
+            android:id="@+id/reg_email"
+            android:layout_width="196dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#89cff0"
+            android:ems="10"
+            android:hint="@string/enter_e"
+            android:inputType="textEmailAddress"
+            android:padding="5sp"
+            android:textColor="#ffffff"
+            android:textColorHint="#a9a9a9"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.425"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reg_regNo" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="253dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.652"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reg_email">
+
+            <RadioButton
+                android:id="@+id/radioAdmin"
+                android:layout_width="135dp"
+                android:layout_height="20sp"
+                android:buttonTint="#ff0000"
+                android:text="@string/admin"
+                android:textColor="#ffffff"
+                android:textSize="11sp"
+                tools:ignore="SmallSp" />
+
+            <RadioButton
+                android:id="@+id/radioMember"
+                android:layout_width="118dp"
+                android:layout_height="20dp"
+                android:buttonTint="#ff0000"
+                android:text="@string/member"
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="322dp"
+        android:layout_height="257dp"
+        android:layout_marginBottom="4dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/add"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/color_r"
+        android:text="@string/add"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="219dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#89cff0"
+        android:ems="10"
+        android:hint="@string/team_name"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="#a9a9a9"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119" />
+</androidx.constraintlayout.widget.ConstraintLayout>

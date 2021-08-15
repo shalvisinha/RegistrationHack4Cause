@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "319370773280",
+    "firebase_url": "https://hack4cause-b2068.firebaseio.com",
+    "project_id": "hack4cause-b2068",
+    "storage_bucket": "hack4cause-b2068.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319370773280:android:d682c6780d93769ced4d45",
+        "android_client_info": {
+          "package_name": "com.example.hack4cause"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319370773280-6a9510h2v0i7720a5b5jh6b7d8h7ff60.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hack4cause",
+            "certificate_hash": "9639650560fc784ecc6cabd5860438dc17312e6b"
+          }
+        },
+        {
+          "client_id": "319370773280-r25iarth2iio71anf291glfvu54vkrr0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChwyAcVSlACOkucV5RiWXDAsKsX6uz4ro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319370773280-r25iarth2iio71anf291glfvu54vkrr0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
